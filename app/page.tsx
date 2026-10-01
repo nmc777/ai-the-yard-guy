@@ -51,9 +51,14 @@ export default function Page() {
       </section>
 
       <section className="story-section" id="story" aria-labelledby="story-heading">
-                <div className="story-grid">
-          <div><p className="eyebrow">OUR APPROACH</p><h2 id="story-heading">Rooted in<br /><em>the community.</em></h2></div>
-          <div className="story-copy"><p>For more than five years, AI The Yard Guy has helped neighbours across Windsor-Essex feel proud of where they live.</p><p>From the first tidy-up of spring to the last snowfall of winter, we bring dependable care, honest communication, and a sharp eye for the details that make an outdoor space feel like yours.</p><div className="story-stats"><div><strong>5+</strong><span>Years serving our community</span></div><div><strong>100%</strong><span>Care in every visit</span></div></div></div>
+        <div className="story-photo" role="img" aria-label="A freshly cut, striped lawn" />
+        <div className="story-panel">
+          <p className="eyebrow light">OUR APPROACH</p>
+          <h2 id="story-heading">Rooted in<br /><em>the community.</em></h2>
+          <p className="story-lead">For more than five years, AI The Yard Guy has helped neighbours across Windsor-Essex feel proud of where they live.</p>
+          <p className="story-body">From the first tidy-up of spring to the last snowfall of winter, we bring dependable care, honest communication, and a sharp eye for the details that make an outdoor space feel like yours.</p>
+          <div className="story-stats"><div><strong>5+</strong><span>Years serving our community</span></div><div><strong>100%</strong><span>Care in every visit</span></div></div>
+          <Link className="button button-light" href="/#contact">Get a free quote <ArrowRight size={17} /></Link>
         </div>
       </section>
 
