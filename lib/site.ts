@@ -126,3 +126,8 @@ export const whyUs: Faq[] = [
   { q: 'How can I improve my home’s curb appeal in Tecumseh?', a: 'Start with a clean lawn edge, fresh mulch and healthy planting. Those three things make the biggest difference for the least effort. We can do all of them.' },
   { q: 'Which areas do you serve?', a: 'Tecumseh, Windsor, LaSalle, Amherstburg, Essex, Kingsville, Leamington, Lakeshore and the communities around them.' },
 ]
+
+// Swap these for your Google Business Profile map (Share > Embed a map) to pin your exact listing.
+export const MAP_QUERY = 'Tecumseh, Ontario'
+export const MAP_EMBED = `https://www.google.com/maps?q=${encodeURIComponent(MAP_QUERY)}&z=10&output=embed`
+export const MAP_LINK = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(MAP_QUERY)}`
