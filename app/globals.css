@@ -127,3 +127,19 @@ a { color: inherit; }
 .more-grid a:hover { background: var(--forest); color: #fff; transform: translateY(-3px); }
 .footer-col a { text-decoration: none; }
 @media (max-width: 700px) { .areas-section, .service-detail, .service-areas { padding: 70px 8vw; } .areas-grid, .service-detail { grid-template-columns: 1fr; gap: 32px; } .areas-list { grid-template-columns: 1fr 1fr; } .service-hero-content { padding: 80px 8vw 50px; } .nav-links a { color: var(--ink); } .nav-links a:hover { color: var(--forest); } .nav-links .nav-cta { border-bottom-color: var(--forest); } .more-services { padding: 60px 8vw; } }
+
+/* FAQ */
+.faq-section { padding: 100px 9vw; background: var(--cream); }
+.faq-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 8vw; }
+.faq-grid h2, .service-faq h2 { font-size: clamp(40px, 4.8vw, 66px); line-height: .95; letter-spacing: -.055em; margin: 0 0 24px; }
+.faq-lead { color: #65736b; font-size: 16px; line-height: 1.7; max-width: 340px; }
+.faq-list details { border-top: 1px solid var(--line); padding: 20px 0; }
+.faq-list details:last-child { border-bottom: 1px solid var(--line); }
+.faq-list summary { cursor: pointer; font: 20px/1.25 Georgia, serif; list-style: none; display: flex; justify-content: space-between; gap: 20px; transition: color .2s ease; }
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: '+'; color: var(--forest); font-size: 24px; line-height: 1; }
+.faq-list details[open] summary::after { content: '–'; }
+.faq-list summary:hover { color: var(--forest); }
+.faq-list p { color: #65736b; font-size: 15px; line-height: 1.7; margin: 14px 0 0; max-width: 560px; }
+.service-faq .faq-list { max-width: 760px; margin-top: 30px; }
+@media (max-width: 700px) { .faq-section { padding: 70px 8vw; } .faq-grid { grid-template-columns: 1fr; gap: 32px; } }

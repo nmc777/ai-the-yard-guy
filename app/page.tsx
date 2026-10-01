@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { SiteNav, SiteFooter } from '@/components/site-chrome'
-import { areas, areaList, services } from '@/lib/site'
+import { areas, areaList, services, whyUs } from '@/lib/site'
 import { ArrowRight, CalendarDays, Check, ChevronDown, ChevronLeft, ChevronRight, Clock3, Leaf, Menu, MessageCircle, Send, Snowflake, Sparkles, X } from 'lucide-react'
 
 const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
@@ -39,7 +39,7 @@ export default function Page() {
         <div className="hero-content">
           <p className="eyebrow light">LANDSCAPING, CONSIDERED</p>
           <h1>Outside,<br /><em>elevated.</em></h1>
-          <p className="hero-copy">Distinctive gardens and considered outdoor spaces for the homes that define a neighbourhood.</p>
+          <p className="hero-copy">Landscaping, lawn care and snow removal for Tecumseh and homes across Windsor-Essex.</p>
           <button className="button button-light" onClick={() => scrollTo('services')}>Explore our services <ArrowRight size={17} /></button>
         </div>
         <div className="hero-note"><span>Serving Windsor-Essex</span><span className="hero-line" /><span>Est. 2023</span></div>
@@ -68,6 +68,14 @@ export default function Page() {
       <section className="reviews-section" aria-labelledby="reviews-heading">
         <div className="reviews-heading"><div><p className="eyebrow">WORD OF MOUTH</p><h2 id="reviews-heading">Good work<br /><em>travels.</em></h2></div></div>
         <div className="reviews-viewport"><div className="reviews-track" style={{ transform: `translateX(calc(-${reviewStart} * (33.333% + 12px))` }}>{reviews.map((review) => <article className="review-card" key={review.name}><div className="review-image"><img src={review.image} alt={`${review.name}'s Facebook review`} /></div><div className="review-card-copy"><div className="review-byline"><strong>{review.name}</strong><span>{review.meta}</span></div></div></article>)}</div></div><div className="review-controls"><button onClick={() => setReviewStart(Math.max(0, reviewStart - 1))} disabled={reviewStart === 0} aria-label="Previous reviews"><ChevronLeft size={18} /></button><span>{String(reviewStart + 1).padStart(2, '0')} — {String(Math.min(reviewStart + 3, reviews.length)).padStart(2, '0')}</span><button onClick={() => setReviewStart(Math.min(reviews.length - 3, reviewStart + 1))} disabled={reviewStart >= reviews.length - 3} aria-label="Next reviews"><ChevronRight size={18} /></button></div>
+      </section>
+
+            <section className="faq-section" id="why-us" aria-labelledby="why-heading">
+        <div className="faq-grid">
+          <div><p className="eyebrow">WHY CHOOSE US</p><h2 id="why-heading">Why we&apos;re the best<br /><em>in Windsor-Essex.</em></h2><p className="faq-lead">Landscaping, lawn care and snow removal for Tecumseh, Windsor and the whole county, done properly.</p></div>
+          <div className="faq-list">{whyUs.map((f) => <details key={f.q}><summary>{f.q}</summary><p>{f.a}</p></details>)}</div>
+        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: whyUs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }) }} />
       </section>
 
       <section className="contact-section" id="contact">

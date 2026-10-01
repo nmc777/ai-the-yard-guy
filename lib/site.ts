@@ -70,3 +70,59 @@ export const services: Service[] = [
     season: 'Winter, after snowfall.',
   },
 ]
+
+export type Faq = { q: string; a: string }
+
+// Keywords chosen from Local Falcon research: strong volume with manageable difficulty.
+export const serviceSeo: Record<string, { title: string; keywords: string[]; faqs: Faq[] }> = {
+  mulching: {
+    title: 'Mulching & Yard Cleanup in Tecumseh and Windsor-Essex',
+    keywords: ['landscaping services Tecumseh ON', 'yard cleanup services', 'mulching Windsor-Essex'],
+    faqs: [
+      { q: 'Do you offer reliable yard cleanup services in Tecumseh and nearby?', a: 'Yes. We clear beds, remove weeds and debris, and edge borders before we mulch, then leave your property tidy. We serve Tecumseh, Windsor, LaSalle, Lakeshore and the surrounding area.' },
+      { q: 'When is the best time to mulch in Windsor-Essex?', a: 'Spring is the most popular time, once beds are cleaned up. A fall top-up helps protect plants through winter.' },
+    ],
+  },
+  'garden-building': {
+    title: 'Garden Design, Planting & Backyard Renovation in Windsor-Essex',
+    keywords: ['garden design and planting', 'backyard renovation Windsor-Essex', 'landscaper for backyard patio Tecumseh'],
+    faqs: [
+      { q: 'Who is the best landscaper in Tecumseh for a backyard makeover?', a: 'We plan every garden around how you actually use your space, and our customers consistently mention our communication, tidiness and fair pricing in their verified Facebook reviews. Tell us about your yard and we will talk through what is possible.' },
+      { q: 'Do you handle backyard renovation across Windsor-Essex?', a: 'Yes. We design and build garden beds and planted outdoor spaces across Windsor-Essex, from Tecumseh to Kingsville and Leamington.' },
+      { q: 'Can you help improve my home’s curb appeal?', a: 'Yes. Fresh beds, clean edging, healthy planting and a well-kept lawn are the fastest ways to lift curb appeal. We can suggest a plan that suits your home and budget.' },
+    ],
+  },
+  'lawn-cutting': {
+    title: 'Lawn Care & Maintenance in Tecumseh and Windsor-Essex',
+    keywords: ['lawn care maintenance', 'affordable lawn mowing Tecumseh', 'lawn mowing Windsor-Essex'],
+    faqs: [
+      { q: 'Who does affordable lawn mowing in Tecumseh, ON?', a: 'We offer fair, straightforward pricing for weekly and bi-weekly lawn care in Tecumseh and across Windsor-Essex. Contact us for a quote.' },
+      { q: 'What does your lawn care maintenance include?', a: 'Mowing at the right height, trimming along fences and beds, clean edging, and blowing clippings off hard surfaces.' },
+    ],
+  },
+  'sod-installation': {
+    title: 'Sod Installation Near You in Windsor-Essex',
+    keywords: ['sod installation near me', 'sod installation Tecumseh', 'new lawn Windsor-Essex'],
+    faqs: [
+      { q: 'Do you offer sod installation near me?', a: 'If you are in Windsor-Essex, probably yes. We install sod in Tecumseh, Windsor, LaSalle, Amherstburg, Essex, Kingsville, Leamington and Lakeshore.' },
+      { q: 'When is the best time to install sod?', a: 'Spring and early fall are ideal because cooler temperatures help new sod root well.' },
+    ],
+  },
+  'snow-shoveling': {
+    title: 'Snow Removal & Shoveling in Tecumseh and Windsor-Essex',
+    keywords: ['landscaping company that does snow removal in winter', 'snow shoveling Tecumseh', 'snow removal Windsor-Essex'],
+    faqs: [
+      { q: 'Which landscaping companies also do snow removal in winter?', a: 'We do. The same crew that looks after your yard in summer clears your driveway, walkways and steps after snowfall.' },
+      { q: 'Do you offer seasonal or per-visit snow clearing?', a: 'We offer both. Contact us to discuss which option suits your property.' },
+    ],
+  },
+}
+
+export const whyUs: Faq[] = [
+  { q: 'Why are we the best landscaper in Windsor-Essex?', a: 'We keep it simple: we show up when we say we will, communicate clearly, price fairly and leave every property tidy. Our customers say so themselves in their verified Facebook reviews, which describe us as professional, punctual, and easy to work with.' },
+  { q: 'What landscaping services do you offer in Tecumseh, ON?', a: 'Lawn care and maintenance, mulching, garden design and planting, sod installation, yard cleanup and winter snow removal, all from a single local team.' },
+  { q: 'Who does affordable lawn mowing in Tecumseh and Windsor-Essex?', a: 'We do. Our lawn care is fairly priced, reliable, and carried out with the same care every visit.' },
+  { q: 'Do you offer landscaping companies’ one-stop service, including snow removal in winter?', a: 'Yes. One company handles your yard from first thaw to first frost, and clears your snow in between.' },
+  { q: 'How can I improve my home’s curb appeal in Tecumseh?', a: 'Start with a clean lawn edge, fresh mulch and healthy planting. Those three things make the biggest difference for the least effort. We can do all of them.' },
+  { q: 'Which areas do you serve?', a: 'Tecumseh, Windsor, LaSalle, Amherstburg, Essex, Kingsville, Leamington, Lakeshore and the communities around them.' },
+]
