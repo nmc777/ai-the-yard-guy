@@ -164,3 +164,16 @@ a { color: inherit; }
 @media (max-width: 700px) { .story-section { grid-template-columns: 1fr; } .story-photo { min-height: 300px; } .story-photo::after { background: linear-gradient(180deg, transparent 60%, #04301b); } .story-panel { padding: 60px 8vw 80px; } .story-lead { font-size: 21px; } }
 
 .review-card { background: #fff; align-self: flex-start; }
+
+/* make review cards stand out */
+.reviews-section { background: #04301b; }
+.reviews-heading h2 { color: #fff; }
+.reviews-heading .eyebrow { color: var(--lime); }
+.review-controls { color: rgba(255,255,255,.8) !important; }
+.review-controls button { border-color: rgba(255,255,255,.4); color: #fff; }
+.review-controls button:not(:disabled):hover { background: var(--lime); color: var(--ink); border-color: var(--lime); }
+.reviews-viewport { padding: 14px 0 34px; margin: -14px 0 -34px; }
+.reviews-track { gap: 22px; }
+.review-card { flex-basis: calc((100% - 44px) / 3); border-radius: 14px; overflow: hidden; border: 3px solid rgba(196,223,129,.9); box-shadow: 0 24px 50px rgba(0,0,0,.45); }
+.review-card:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 34px 70px rgba(0,0,0,.55); border-color: var(--lime); }
+@media (max-width: 700px) { .review-card { flex-basis: min(82vw, 350px); } }
