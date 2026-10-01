@@ -162,3 +162,5 @@ a { color: inherit; }
 .story-panel .story-stats strong { color: var(--lime); font-size: clamp(56px, 6vw, 88px); }
 .story-panel .story-stats span { color: rgba(255,255,255,.75); font-size: 11px; max-width: 150px; }
 @media (max-width: 700px) { .story-section { grid-template-columns: 1fr; } .story-photo { min-height: 300px; } .story-photo::after { background: linear-gradient(180deg, transparent 60%, #04301b); } .story-panel { padding: 60px 8vw 80px; } .story-lead { font-size: 21px; } }
+
+.review-card { background: #fff; align-self: flex-start; }
