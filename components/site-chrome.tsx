@@ -11,6 +11,8 @@ export function SiteNav() {
   const close = () => { setMenuOpen(false); setServicesOpen(false) }
 
   return (
+    <>
+    <div className="top-bar">Proudly serving Windsor-Essex</div>
     <nav className="nav-wrap" aria-label="Main navigation">
       <Link className="brand" href="/" onClick={close} aria-label="AI The Yard Guy home"><span className="brand-mark">AI</span><span>THE YARD GUY</span></Link>
       <div className={`nav-links ${menuOpen ? 'nav-links-open' : ''}`}>
@@ -27,6 +29,7 @@ export function SiteNav() {
       </div>
       <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">{menuOpen ? <X /> : <Menu />}</button>
     </nav>
+    </>
   )
 }
 
