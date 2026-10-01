@@ -79,3 +79,6 @@ footer .brand { color: #dce4db; }footer .brand-mark { border-color: #dce4db; }
 .footer-bottom { display: flex; justify-content: space-between; padding-top: 24px; }
 .footer-copy { color: #8f9e94; font-size: 11px; }
 @media (max-width: 700px) { .footer-top { grid-template-columns: 1fr 1fr; } .footer-brand { grid-column: span 2; } }
+
+.reviews-section .review-controls { justify-content: center; margin-top: 32px; }
+@media (max-width: 700px) { .reviews-section .review-controls { margin: 24px auto 0; max-width: none; justify-content: center; gap: 24px; } }
