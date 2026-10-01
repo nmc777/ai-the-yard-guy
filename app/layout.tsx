@@ -4,7 +4,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'AI The Yard Guy | Landscaping, Considered',
-  description: 'Distinctive gardens and considered outdoor spaces for homes across Toronto and the GTA.',
+  description: 'Distinctive gardens and considered outdoor spaces for homes across Windsor-Essex, including Windsor, Tecumseh, LaSalle, Amherstburg, Essex, Kingsville and Leamington.',
   generator: 'v0.app',
   icons: {
     icon: [
